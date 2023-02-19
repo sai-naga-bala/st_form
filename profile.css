@@ -1,0 +1,33 @@
+.main-container{
+    background-image: linear-gradient( blue 25%,white 20%);
+    height: 70vh;
+    width: 25vw;
+}
+
+.profile-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    margin-top: 40px;
+}
+
+.image-container{
+    text-align: center;
+}
+.text-container{
+    text-align: left;
+}
+.para-container{
+    text-align: left;
+    margin-left: 20px ;
+}
+.first-container{
+    background-image: linear-gradient( lightyellow ,white ,pink,pink);
+    width: 100vw;
+    height: 100vh;
+}
+.last-button{
+    text-align: center;
+}

@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center p-5">
+    <form id="form" class ="mt-3 mb-3">
+        <h1 class="heading-color mb-3">Student Details</h1>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="d-flex flex-column justify-content-center mr-5">
+                <div class="input-control d-flex flex-column">
+                    <label for="username" class="text-colour">Student Name</label>
+                    <input type="text" id="username" name="" class="text-box-style" placeholder="enetr your name">
+                    <div class="error" id = "firstDiv"></div>
+                </div>
+                <div class="input-control d-flex flex-column">
+                    <label for="email" class="text-colour">email</label>
+                    <input type="email" id="email" name="" class="text-box-style" />
+                    <div class="error" id = "secondDiv"></div>
+                </div>
+
+                <div class="input-control mt-1">
+                    <label class="text-colour">Gender</label> 
+                    <div>
+                    
+                        <input id ="Female" type="radio" name="Gender"  value="F"/>
+                        <label for="Female" class="text-colour">Female</label>
+                        <input id ="Male" type="radio" name="Gender"  value="M"/>
+                        <label for="Male" class="text-colour">Male</label>
+                        <div class="error" id="genderDiv"></div>
+                    
+                    </div>
+                </div>
+                <div class="input-control d-flex flex-column">
+                    <label for="address" class="text-colour">Address</label>
+                    <input type="text" id="address" name="address" class="text-box-style">
+                    <div class="error" id = "addDiv"></div>
+                </div>
+                <div class="input-control d-flex flex-column">
+                    <label for="dob" class="text-colour">Date Of Birth</label>
+                    <input type="date" class="form-control" id="dob" class="text-box-style">
+                    <div class="error" id = "dobDiv"></div>
+                </div>
+            </div>
+            <div class="d-flex flex-column ml-5">
+                <div class="input-control d-flex flex-column">
+                    <label for="class_s" class="text-colour">Class</label>
+                    <input type="number" id="class_s" name="class_s" class="text-box-style">
+                    <div class="error" id = "classDiv"></div>
+                </div>
+                <div class="input-control d-flex flex-column">
+                    <label for="roll_no" class="text-colour">Phone Number</label>
+                    <input type="tel" id="roll_no" name="roll_no" maxlength="10" class="text-box-style">
+                    <div class="error" id = "rollDiv"></div>
+                </div>
+                <div class="input-control d-flex flex-column mb-1">
+                    <label for="department" class="text-colour">Department</label>
+                    <input type="text" id="department" name="department" class="text-box-style">
+                    
+                <div class="error" id = "deptDiv"></div>
+                
+                </div> 
+                <div class="input-control d-flex flex-column mb-1">
+                    <label for="subject" class="text-colour">Subject</label>
+                    <input type="text" id="subject" name="subject" class="text-box-style">
+                    <div class="error" id = "subjectDiv"></div>
+                </div>
+                <div class="input-control d-flex flex-column">
+                    <label for="profile" class="text-colour">Profile Picture</label>
+                    <input type="file" id="profile" name="profile" onchange="loadFile(event)" class="text-box-style">
+                    <div class="error" id = "profileDiv"></div>
+                </div>
+
+                <!-- <img src="C:\Users\Admin\Pictures\Screenshots\Screenshot (24).png" /> -->
+                <div id="result"></div>
+            </div>
+        </div>
+        <div class="button-style">
+            <button class="btn btn-success mt-4 mr-4">Submit</button>
+        </div>
+    </form>
+    <div class="d-flex flex-row justify-content-center mr-4" >
+        <button class="btn btn-danger " onclick="reset()">Reset</button>
+    </div>
+</div>
+</body>
+    <script src="index.js"></script>
+</html>
+
+
+

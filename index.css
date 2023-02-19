@@ -1,0 +1,51 @@
+.container{
+    /* background-color: rgb(128, 189, 204); */
+    background-image: linear-gradient( violet,lightblue,lightgreen,violet);
+    background-size: cover;
+}
+.buttons{
+    background-color: blue;
+    color: azure;
+    border-width: 0px;
+    border-radius: 4px;
+    height: 20px;
+    text-align:center
+    
+}
+
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.text-box-style{
+    border-radius: 10px;
+    width: 220px;
+}
+
+.text-colour{
+    color: black;
+    font-weight: bold;
+}
+
+.heading-color{
+    text-align: center;
+}
+
+.button-style{
+    text-align: center;
+}
